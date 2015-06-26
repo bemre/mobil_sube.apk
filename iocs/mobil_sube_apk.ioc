@@ -1,0 +1,94 @@
+<ioc
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:xsd='http://www.w3.org/2001/XMLSchema'
+    xmlns='http://schemas.mandiant.com/2010/ioc' id='8c50ae79-490f-4319-bc99-0002696808a0' last-modified='2015-06-26T12:17:53.120Z'>
+    <short_description>Mobil Şube Zararlı Yazılımı</short_description>
+    <description>Mobil Şube Zararlı Yazılımı</description>
+    <authored_by>Bâkır EMRE</authored_by>
+    <authored_date>2015-06-26T12:17:53.120Z</authored_date>
+    <links/>
+    <definition>
+        <Indicator operator='OR' id='bf6d115e-8317-4aa5-b17f-1cbbb9bcd8b8'>
+            <IndicatorItem condition='contains' id='771a46fd-916e-40a5-91ec-b59a22c00dcb'>
+                <Context document='UrlHistoryItem' search='UrlHistoryItem/URL' type='mir'/>
+                <Content type='string'>http://185.50.69.100:4444/api/Device</Content>
+            </IndicatorItem>
+            <IndicatorItem condition='contains' id='87c94fc7-be1e-444b-a8d5-1d04b420fb1b'>
+                <Context document='UrlHistoryItem' search='UrlHistoryItem/URL' type='mir'/>
+                <Content type='string'>http://188.165.164.108/api/ga.js</Content>
+            </IndicatorItem>
+            <IndicatorItem condition='contains' id='7104422e-d036-46d6-aeb3-c3feaddcd718'>
+                <Context document='UrlHistoryItem' search='UrlHistoryItem/URL' type='mir'/>
+                <Content type='string'>http://188.165.3.245/api/ga.js</Content>
+            </IndicatorItem>
+            <IndicatorItem condition='contains' id='63600cf3-a2fe-4a2a-a0c9-368528ad55a8'>
+                <Context document='UrlHistoryItem' search='UrlHistoryItem/Username' type='mir'/>
+                <Content type='string'>2cdb5aac-2140-46aa-b848-2421b9c9a864</Content>
+            </IndicatorItem>
+            <IndicatorItem condition='contains' id='d64c5ce6-37ff-4b5e-bb54-0e24140f0d09'>
+                <Context document='FileItem' search='FileItem/Md5sum' type='mir'/>
+                <Content type='md5'>00c27cd5c671c6a43f477d7c8d267b5d</Content>
+            </IndicatorItem>
+            <IndicatorItem condition='contains' id='30083802-4ae3-48e4-a136-60f4818a9d52'>
+                <Context document='FileItem' search='FileItem/Md5sum' type='mir'/>
+                <Content type='md5'>0817e131e722c8634aa37c878caebb9c</Content>
+            </IndicatorItem>
+            <IndicatorItem condition='contains' id='d2fe69c8-a034-4a2a-bf39-153071176ea7'>
+                <Context document='FileItem' search='FileItem/Md5sum' type='mir'/>
+                <Content type='md5'>0d6f21d503b626ab0cac96dd0911a253</Content>
+            </IndicatorItem>
+            <IndicatorItem condition='contains' id='f5763084-2f74-4ce0-b069-4b5a268d7581'>
+                <Context document='FileItem' search='FileItem/Md5sum' type='mir'/>
+                <Content type='md5'>135182c7b0e72f9ba0f2fa39f6d3584c</Content>
+            </IndicatorItem>
+            <IndicatorItem condition='contains' id='ea58abbd-dafa-4e3c-8240-199a623cf2bc'>
+                <Context document='FileItem' search='FileItem/Md5sum' type='mir'/>
+                <Content type='md5'>3ea1e56dae9c41e06a7f8441aba0f444</Content>
+            </IndicatorItem>
+            <IndicatorItem condition='contains' id='3519480b-d15b-41ce-b29c-382c11d9fb56'>
+                <Context document='FileItem' search='FileItem/Md5sum' type='mir'/>
+                <Content type='md5'>616dc9da911a6d674861450fa629abdd</Content>
+            </IndicatorItem>
+            <IndicatorItem condition='contains' id='5e121b7a-d643-4e6e-8808-d2fc032ca2de'>
+                <Context document='FileItem' search='FileItem/Md5sum' type='mir'/>
+                <Content type='md5'>91d700382d2b14246c2af73643778367</Content>
+            </IndicatorItem>
+            <IndicatorItem condition='contains' id='d3cb3b68-de0e-4f8c-a969-cee52068f993'>
+                <Context document='FileItem' search='FileItem/Md5sum' type='mir'/>
+                <Content type='md5'>a296ff07fa5b305c2616d1be003eea2e</Content>
+            </IndicatorItem>
+            <IndicatorItem condition='contains' id='007fb93b-852d-48d8-a2c0-e0d436cdb503'>
+                <Context document='FileItem' search='FileItem/Md5sum' type='mir'/>
+                <Content type='md5'>b6ef3a4f212a1b57e56935401dd6c707</Content>
+            </IndicatorItem>
+            <IndicatorItem condition='contains' id='51d3c7c6-187c-4a6e-8351-4d496a1aeba2'>
+                <Context document='FileItem' search='FileItem/Md5sum' type='mir'/>
+                <Content type='md5'>bf56f5cf7d4e0a61cdf7d5ece5e56941</Content>
+            </IndicatorItem>
+            <IndicatorItem condition='contains' id='62e77849-1109-4039-9a2b-5e79d4b9d5b9'>
+                <Context document='FileItem' search='FileItem/Md5sum' type='mir'/>
+                <Content type='md5'>d17898ac5741c8604e35822a9e9574f4</Content>
+            </IndicatorItem>
+            <IndicatorItem condition='contains' id='dd155df3-74c3-4a3a-b2f0-244433fd519a'>
+                <Context document='FileItem' search='FileItem/Md5sum' type='mir'/>
+                <Content type='md5'>d7800b1ae85bf184c422d4e0a935cb27</Content>
+            </IndicatorItem>
+            <IndicatorItem condition='contains' id='3ed702ce-4484-4de3-84c9-26c1e093cd09'>
+                <Context document='FileItem' search='FileItem/Md5sum' type='mir'/>
+                <Content type='md5'>ddfbe84fb50763d9d3ebcb908c782735</Content>
+            </IndicatorItem>
+            <IndicatorItem condition='contains' id='38ba270c-7c55-4eb5-b5f0-dc6a5fcb4359'>
+                <Context document='FileItem' search='FileItem/Md5sum' type='mir'/>
+                <Content type='md5'>f13eb9eda466c1902c0c6324f8318395</Content>
+            </IndicatorItem>
+            <IndicatorItem condition='contains' id='de654445-4a36-4312-b745-0926b716d6d1'>
+                <Context document='Network' search='Network/String' type='mir'/>
+                <Content type='string'>Bankacılık hizmetlerinden yararlanabilmeniz için uygulamayı yüklemeniz gerekmektedir.</Content>
+            </IndicatorItem>
+            <IndicatorItem condition='contains' id='978c564c-0040-46e0-a6b4-bc8c131761bf'>
+                <Context document='FileItem' search='FileItem/FileExtension' type='mir'/>
+                <Content type='string'>apk</Content>
+            </IndicatorItem>
+        </Indicator>
+    </definition>
+</ioc>
