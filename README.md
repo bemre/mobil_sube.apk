@@ -85,6 +85,7 @@ Zararlı yazılım geliştiricisi SMS ile gönderdiği linklerde her bir banka i
 - mobilsubeniz.com 
 - smsaktivasyon.com
 - mobilesubekurulumu.com
+- mobilsubekurulum.com
 
 Zararlının yayılmasında bu domainler doğrudan kullanılmamış, her bir domainde hedef alınan banka müşterisine göre **subdomain**ler oluşturulmuş ve uygulama ilgili **subdomain**de servis edilmiştir.
 - banka1.mobilsubeyukle.com
@@ -109,6 +110,7 @@ Kullanılan domainlerin bazılarına ait IP bilgileri ise şu şekildedir:
 |smsaktivasyon.com|178.32.143.123|
 |mobilesubeaktivasyon.com|37.59.254.50|
 |mobilsubeyukle.com |94.23.78.48|
+|mobilsubekurulum.com|5.135.59.57|
 
 Zararlı yazılımın ilk ortaya çıktığı tarihlerden kısa bir süre önce internet üzerinde sadece [**virscan.org**] sitesinde bilgi bulanabilmektedir. 
 ![](<imgs/virscan.png>)
